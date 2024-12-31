@@ -1,0 +1,133 @@
+{
+	"credit": "Designed by Blay09 with Cubik Studio - https://cubik.studio",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"6": "cookingforblockheads:block/oven_inside_back",
+		"7": "cookingforblockheads:block/oven_back",
+		"8": "cookingforblockheads:block/oven_inside_side",
+		"ovenfront": "cookingforblockheads:block/oven_front",
+		"oventop": "cookingforblockheads:block/oven_top",
+		"ovenbottom": "cookingforblockheads:block/oven_bottom",
+		"ovengrid": "cookingforblockheads:block/oven_grid",
+		"particle": "cookingforblockheads:block/oven_side",
+		"backsplash": "cookingforblockheads:block/oven_side"
+	},
+	"elements": [
+		{
+			"name": "Backsplash",
+			"from": [0, 15, 14.5],
+			"to": [16, 17, 15.5],
+			"faces": {
+				"north": {"uv": [0, 3, 16, 5], "texture": "#6"},
+				"east": {"uv": [15, 5, 16, 7], "texture": "#6"},
+				"south": {"uv": [0, 0, 16, 2], "rotation": 180, "texture": "#6"},
+				"west": {"uv": [0, 5, 1, 7], "texture": "#6"},
+				"up": {"uv": [0, 2, 16, 3], "texture": "#6"}
+			}
+		},
+		{
+			"name": "Bottom",
+			"from": [1, 0, 1.5],
+			"to": [15, 1, 15.5],
+			"faces": {
+				"south": {"uv": [1, 15, 15, 16], "texture": "#7"},
+				"down": {"uv": [1, 0.5, 15, 14.5], "texture": "#ovenbottom"}
+			}
+		},
+		{
+			"name": "Right",
+			"from": [0, 0, 0.5],
+			"to": [1, 15, 15.5],
+			"faces": {
+				"north": {"uv": [15, 1, 16, 16], "texture": "#ovenfront"},
+				"south": {"uv": [0, 1, 1, 16], "texture": "#7"},
+				"west": {"uv": [0.5, 1, 15.5, 16], "texture": "#backsplash"},
+				"up": {"uv": [15, 0.5, 16, 15.5], "rotation": 180, "texture": "#oventop"},
+				"down": {"uv": [15, 15.5, 16, 0.5], "rotation": 180, "texture": "#ovenbottom"}
+			}
+		},
+		{
+			"name": "Left",
+			"from": [15, 0, 0.5],
+			"to": [16, 15, 15.5],
+			"faces": {
+				"north": {"uv": [0, 1, 1, 16], "texture": "#ovenfront"},
+				"east": {"uv": [0.5, 1, 15.5, 16], "texture": "#backsplash"},
+				"south": {"uv": [15, 1, 16, 16], "texture": "#7"},
+				"up": {"uv": [0, 0.5, 1, 15.5], "rotation": 180, "texture": "#oventop"},
+				"down": {"uv": [0, 15.5, 1, 0.5], "rotation": 180, "texture": "#ovenbottom"}
+			}
+		},
+		{
+			"name": "Back",
+			"from": [1, 1, 14.5],
+			"to": [15, 15, 15.5],
+			"faces": {
+				"south": {"uv": [1, 1, 15, 15], "texture": "#7"}
+			}
+		},
+		{
+			"name": "InnerBoard",
+			"from": [1, 5, 1.5],
+			"to": [15, 6, 15],
+			"faces": {
+				"up": {"uv": [1, 1, 14, 13], "texture": "#ovengrid"},
+				"down": {"uv": [1, 1, 14, 13], "texture": "#ovengrid"}
+			}
+		},
+		{
+			"name": "OvenTop",
+			"from": [1, 11, 0.5],
+			"to": [15, 15, 14.5],
+			"faces": {
+				"north": {"uv": [1, 1, 15, 5], "texture": "#ovenfront"},
+				"up": {"uv": [1, 1.625, 15, 15.5], "texture": "#oventop"}
+			}
+		},
+		{
+			"name": "Door",
+			"from": [1, 0, 0.5],
+			"to": [15, 11, 1.5],
+			"faces": {
+				"north": {"uv": [1, 5, 15, 16], "texture": "#ovenfront"},
+				"down": {"uv": [1, 2, 15, 3], "texture": "#6"}
+			}
+		},
+		{
+			"name": "HandleLeft",
+			"from": [12, 10, -0.5],
+			"to": [13, 11, 0.5],
+			"faces": {
+				"east": {"uv": [14.5, 2.5, 15, 3.5], "texture": "#8"},
+				"west": {"uv": [1, 2.5, 1.5, 3.5], "texture": "#8"},
+				"up": {"uv": [12, 2.5, 13, 3], "texture": "#8"},
+				"down": {"uv": [12, 2, 13, 2.5], "texture": "#8"}
+			}
+		},
+		{
+			"name": "HandleRight",
+			"from": [3, 10, -0.5],
+			"to": [4, 11, 0.5],
+			"faces": {
+				"east": {"uv": [14.5, 2.5, 15, 3.5], "texture": "#8"},
+				"west": {"uv": [1, 2.5, 1.5, 3.5], "texture": "#8"},
+				"up": {"uv": [3, 2.5, 4, 3], "texture": "#8"},
+				"down": {"uv": [3, 2, 4, 2.5], "texture": "#8"}
+			}
+		},
+		{
+			"name": "Handle",
+			"from": [1, 10, -1.5],
+			"to": [15, 11, -0.5],
+			"faces": {
+				"north": {"uv": [2, 2, 14, 3], "texture": "#8"},
+				"east": {"uv": [1, 2, 2, 3], "texture": "#8"},
+				"south": {"uv": [2, 2, 14, 3], "texture": "#8"},
+				"west": {"uv": [14, 2, 15, 3], "texture": "#8"},
+				"up": {"uv": [2, 2, 14, 3], "texture": "#8"},
+				"down": {"uv": [2, 2, 14, 3], "texture": "#8"}
+			}
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"texture": "cookingforblockheads:block/oven_inside_back",
+		"ovenfront": "cookingforblockheads:block/oven_front"
+	},
+	"elements": [
+		{
+			"name": "Door",
+			"from": [1.0001, 0, 0.5],
+			"to": [15.0001, 11, 1.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [1, 5, 15, 16], "texture": "#ovenfront"},
+				"east": {"uv": [2.5, 2, 13.5, 3], "rotation": 90, "texture": "#texture"},
+				"south": {"uv": [1, 5, 15, 16], "texture": "#ovenfront"},
+				"west": {"uv": [2.5, 2, 13.5, 3], "rotation": 270, "texture": "#texture"},
+				"up": {"uv": [1, 2, 15, 3], "texture": "#texture"},
+				"down": {"uv": [1, 2, 15, 3], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "HandleLeft",
+			"from": [12, 10, 0],
+			"to": [13, 11, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"east": {"uv": [0.5, 12, 1, 13], "texture": "#texture"},
+				"west": {"uv": [0, 13.5, 0.5, 14.5], "texture": "#texture"},
+				"up": {"uv": [3, 15.5, 4, 16], "texture": "#texture"},
+				"down": {"uv": [5.5, 15, 6.5, 15.5], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "HandleRight",
+			"from": [3, 10, 0],
+			"to": [4, 11, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"east": {"uv": [0.5, 14, 1, 15], "texture": "#texture"},
+				"west": {"uv": [0, 12, 0.5, 13], "texture": "#texture"},
+				"up": {"uv": [1, 15.5, 2, 16], "texture": "#texture"},
+				"down": {"uv": [2.5, 15, 3.5, 15.5], "texture": "#texture"}
+			}
+		}
+	],
+	"groups": [
+		0,
+		{
+			"name": "oven_door_handle",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [1, 2]
+		}
+	]
+}

@@ -1,0 +1,182 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "cookingforblockheads:block/fridge_end",
+		"1": "cookingforblockheads:block/fridge_lower_side",
+		"2": "cookingforblockheads:block/fridge_lower_back",
+		"3": "cookingforblockheads:block/fridge_inside_ends",
+		"4": "cookingforblockheads:block/fridge_lower_inside",
+		"5": "cookingforblockheads:block/fridge_lower_inside_back",
+		"6": "cookingforblockheads:block/fridge_grid",
+		"7": "cookingforblockheads:block/fridge_lower_heatsink",
+		"8": "cookingforblockheads:block/fridge_small_door",
+		"9": "cookingforblockheads:block/fridge_lower_drawer",
+		"particle": "cookingforblockheads:block/fridge_lower_side"
+	},
+	"elements": [
+		{
+			"name": "Static_Bottom",
+			"from": [1, 0, 3],
+			"to": [15, 2, 15],
+			"faces": {
+				"north": {"uv": [1, 14, 15, 16], "texture": "#2", "tintindex": 0},
+				"east": {"uv": [1, 14, 13, 16], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [1, 14, 15, 16], "texture": "#2", "tintindex": 0},
+				"west": {"uv": [1, 14, 13, 16], "texture": "#1", "tintindex": 0},
+				"up": {"uv": [1, 4, 15, 16], "texture": "#3", "tintindex": 0},
+				"down": {"uv": [1, 1, 15, 13], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Static_Right",
+			"from": [1, 2, 3],
+			"to": [3, 16, 15],
+			"faces": {
+				"north": {"uv": [13, 0, 15, 14], "texture": "#2", "tintindex": 0},
+				"east": {"uv": [0.5, 0, 12.5, 13.5], "texture": "#4", "tintindex": 0},
+				"south": {"uv": [1, 0, 3, 14], "texture": "#2", "tintindex": 0},
+				"west": {"uv": [1, 0, 13, 14], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Static_Left",
+			"from": [13, 2, 3],
+			"to": [15, 16, 15],
+			"faces": {
+				"north": {"uv": [1, 0, 3, 14], "texture": "#2", "tintindex": 0},
+				"east": {"uv": [1, 0, 13, 14], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [13, 0, 15, 14], "texture": "#2", "tintindex": 0},
+				"west": {"uv": [3, 0, 15, 13.5], "texture": "#4", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Static_Back",
+			"from": [3, 2, 12.5],
+			"to": [13, 16, 14.5],
+			"faces": {
+				"north": {"uv": [3, 0, 13, 13.5], "texture": "#5", "tintindex": 0},
+				"south": {"uv": [3, 0, 13, 14], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Static_SealRight",
+			"from": [1.5, 1.5, 2],
+			"to": [2.5, 16, 3],
+			"faces": {
+				"north": {"uv": [14.5, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [13, 0, 14.5, 16], "texture": "#1"},
+				"west": {"uv": [13, 0, 14.5, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Static_SealLeft",
+			"from": [13.5, 1.5, 2],
+			"to": [14.5, 16, 3],
+			"faces": {
+				"north": {"uv": [14.5, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [13, 0, 14.5, 16], "texture": "#1"},
+				"west": {"uv": [13, 0, 14.5, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Static_SealBottom",
+			"from": [2.5, 0.5, 2],
+			"to": [13.5, 1.5, 3],
+			"faces": {
+				"north": {"uv": [2.5, 13, 13.5, 14.5], "texture": "#0"},
+				"up": {"uv": [2.5, 13, 13.5, 14.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [2.5, 13, 13.5, 14.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "Static_SealBottomLeft",
+			"from": [13.5, 0.5, 2],
+			"to": [14.5, 1.5, 3],
+			"faces": {
+				"north": {"uv": [3, 14.5, 4.5, 16], "texture": "#0"},
+				"east": {"uv": [13, 0, 14.5, 1.5], "texture": "#1"},
+				"down": {"uv": [13, 1.5, 14.5, 3], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"name": "Static_SealBottomRight",
+			"from": [1.5, 0.5, 2],
+			"to": [2.5, 1.5, 3],
+			"faces": {
+				"north": {"uv": [4.5, 14.5, 6, 16], "texture": "#0"},
+				"west": {"uv": [13, 0, 14.5, 1.5], "texture": "#1"},
+				"down": {"uv": [13, 1.5, 14.5, 3], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"name": "Static_InsideBottom",
+			"from": [3, 2, 4],
+			"to": [13, 9, 12.5],
+			"faces": {
+				"north": {"uv": [0.5, 0.5, 11, 8], "texture": "#9"}
+			}
+		},
+		{
+			"name": "Static_BottomShelf",
+			"from": [3, 9, 3.5],
+			"to": [13, 9.5, 12.5],
+			"faces": {
+				"north": {"uv": [3, 4, 13, 4.5], "texture": "#3"},
+				"up": {"uv": [3, 4, 13, 13.5], "texture": "#3"},
+				"down": {"uv": [11, 11, 0.5, 1.5], "texture": "#6"}
+			}
+		},
+		{
+			"name": "Static_InsideBottomStrip",
+			"from": [7.75, 2, 3.5],
+			"to": [8.25, 9, 4],
+			"faces": {
+				"north": {"uv": [12.5, 4.5, 13, 11], "texture": "#3"},
+				"east": {"uv": [3, 4.5, 3.5, 11], "texture": "#3"},
+				"west": {"uv": [3, 4.5, 3.5, 11], "texture": "#3"}
+			}
+		},
+		{
+			"name": "Static_MiddleShelf",
+			"from": [3, 15, 3.5],
+			"to": [13, 15.5, 12.5],
+			"faces": {
+				"north": {"uv": [0.5, 0.5, 11, 1], "texture": "#6"},
+				"up": {"uv": [0.5, 1.5, 11, 11], "texture": "#6"},
+				"down": {"uv": [0.5, 1.5, 11, 11], "texture": "#6"}
+			}
+		},
+		{
+			"name": "Static_InsideHandleRight",
+			"from": [5, 4.5, 3.5],
+			"to": [6, 6, 4],
+			"faces": {
+				"north": {"uv": [15, 2.5, 16, 4], "texture": "#8"},
+				"east": {"uv": [15, 2.5, 15.5, 4], "texture": "#8"},
+				"west": {"uv": [15.5, 2.5, 16, 4], "texture": "#8"},
+				"up": {"uv": [15, 1, 16, 1.5], "texture": "#8"},
+				"down": {"uv": [15, 1.5, 16, 2], "texture": "#8"}
+			}
+		},
+		{
+			"name": "Static_InsideHandleLeft",
+			"from": [10, 4.5, 3.5],
+			"to": [11, 6, 4],
+			"faces": {
+				"north": {"uv": [15, 2.5, 16, 4], "texture": "#8"},
+				"east": {"uv": [15, 2.5, 15.5, 4], "texture": "#8"},
+				"west": {"uv": [15.5, 2.5, 16, 4], "texture": "#8"},
+				"up": {"uv": [15, 1, 16, 1.5], "texture": "#8"},
+				"down": {"uv": [15, 1.5, 16, 2], "texture": "#8"}
+			}
+		},
+		{
+			"name": "Static_Heatsink",
+			"from": [3, 2, 14.75],
+			"to": [13, 16, 14.75],
+			"faces": {
+				"south": {"uv": [3, 0, 13, 14], "texture": "#7", "tintindex": 0}
+			}
+		}
+	]
+}
